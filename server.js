@@ -48,7 +48,7 @@ function template(data)
 
 app.get('/:pagesname',function(req,res){
     var pagesname=req.params.pagesname;
-   res.sendFile(template(pages[pagesname])); 
+   res.send(template(pages[pagesname])); 
 });
 app.listen(8080, function () {
    
