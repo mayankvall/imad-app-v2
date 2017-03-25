@@ -6,8 +6,15 @@ var app=express();
 app.use(morgan('combined'));
 
 app.get('/ui/index.html',function(req,res){
-   res.sendFile(path.join(_dirname,'ui','index.html')); 
+   res.sendFile(path.join(__dirname,'ui','index.html')); 
 });
+app.get('/ui/index.html',function(req,res){
+   res.sendFile(path.join(__dirname,'ui','main.js')); 
+});
+app.get('/ui/index.html',function(req,res){
+   res.sendFile(path.join(__dirname,'ui','style.css')); 
+});
+
 var server=app.listen(8080,function(){
     var host=server.address().address;
     var port=server.address().port;
