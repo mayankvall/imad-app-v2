@@ -43,7 +43,7 @@ function template(data)
         </body>
     </html>
 `
-    
+    return htmltemplate;
 }
 
 app.get('/:pagesname',function(req,res){
