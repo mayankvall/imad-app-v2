@@ -20,5 +20,5 @@ app.get('/ui/madi.png', function (req, res) {
 app.listen(8080, function () {
    
    
-   //console.log("Example app listening at http://%s:%s", host, port)
+   console.log("app listening on port 8080");
 })
